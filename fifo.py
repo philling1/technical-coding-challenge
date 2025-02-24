@@ -90,8 +90,8 @@ class University:
         return list(self.course_students.get(course, []))
 
 
-# Example Usage
-# if __name__ == "__main__":
+# Example Usages
+
 # FIFO Inventory Management Test
 stock = [(10, 5), (20, 6), (15, 7)]  # Stock format: (quantity, price per unit)
 inventory = FIFOInventory(stock)
@@ -105,6 +105,7 @@ orders = [
     {"id": 2, "items": [{"name": "A", "price": 10, "qty": 1},
                             {"name": "C", "price": 20, "qty": 2}]}
 ]
+
 sales = SalesOrder()
 for order in orders:
     sales.add_order(order)
